@@ -10,6 +10,8 @@ except (ValueError, TypeError):
     print('O valor precisa ser númerico.')
 except ZeroDivisionError:
     print('Funcionário não pode ser zero.')
+except KeyboardInterrupt:
+    print('Operação cancelada pelo usuário')
 else:
     print(f'Média por funcionário: {media_por_funcionario:.2f}')
 finally:
